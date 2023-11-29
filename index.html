@@ -1,3 +1,188 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Python</title><link rel="stylesheet" href="style.css"></head><body><div><img class="logo"src="logo.png"/><h1 class="title1">Python Tool <br />SMS Bombing</h1><span class="s1">Steps :</span><ol class="list"><li>pkg update</li><li>pkg upgrade</li><li>pkg install git</li><li>pkg install python</li><li>pip install requests</li><li>git clone https://github.com/ArthurOxic/arxic-lab</li><li>cd arxic-lab</li><li>python sms.py</li>
-    </ol><button class="copyit" type="submit">Copy</button><a class="download"href="/style.css">Download</a></div></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python</title>
+   <style type="text/css" media="all">
+   
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  background: radial-gradient(#000000D6,#000000E6), url("python.png");
+  background-size: cover;
+  height: 670px;
+}
+@font-face{
+  font-family: title;
+  src: url('title.ttf')
+}
+@font-face{
+  font-family: onetext;
+  src: url('Oswald-Regular.ttf')
+}
+@font-face{
+  font-family: text;
+  src: url('RobotoMono-Light.ttf')
+}
+@font-face{
+  font-family: dowsh;
+  src: url('Rajdhani-Medium.ttf')
+}
+.div1{
+  padding:0px;
+  margin:0px;
+  height: 100%;
+}
+.logo{
+  width: 100px;
+  margin-left: 15px;
+  display: block;
+}
+.title1{
+  color: white;
+  margin-left: 15px;
+  font-family: title;
+}
+.s1{
+  font-size: 20px;
+  color: white;
+  margin-left: 15px;
+  font-family: onetext;
+}
+.list{
+  color: white;
+  font-size: 18px;
+  font-family: text;
+  margin-left: 15px;
+}
+.down{
+  margin-left: 30px;
+  margin-top: 70px;
+  
+}
+
+/*-------------copy---------------*/
+.copyit{
+  width: 120px;
+  height: 52px;
+  display: block;
+  float: left;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background:#000000C9;
+  color: white;
+  font-family: dowsh;
+  
+}
+.imgc{
+  width: 25px;
+  margin-top: 0px;
+  margin-left: 10px;
+  display: inline;
+  float: left;
+}
+.copy{
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+  display: inline;
+  float: left;
+  color: white;
+}
+
+
+/*            Download            */
+.download{
+  width: 150px;
+  height: 50px;
+  display: block;
+  float: left;
+  background: red;
+  margin-left: 25px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: linear-gradient(#5D06FF,#A87AFF);
+  text-shadow: 0px 0px 1px black;
+  font-family: dowsh;
+}
+.imgdl{
+  width: 25px;
+  margin-top: 13px;
+  margin-left: 15px;
+  display: inline;
+  float: left;
+}
+.downl{
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 13px;
+  display: inline;
+  float: left;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .title1 {
+    font-size: 1.5em;
+  }
+  .list {
+    font-size: 16px;
+  }
+}
+   </style>
+
+</head>
+<body>
+  <div class="div1">
+    <img class="logo" src="logo.png"/>
+    <h1 class="title1">Python Tool <br />SMS Bombing</h1>
+    <span class="s1">Steps :</span>
+    <ol class="list">
+      <li>pkg update</li>
+      <li>pkg upgrade</li>
+      <li>pkg install git</li>
+      <li>pkg install python</li>
+      <li>pip install requests</li>
+      <li>git clone https://github.com/ArthurOxic/<br/>arxic-lab</li>
+      <li>cd arxic-lab</li>
+      <li>python sms.py</li>
+    </ol>
+    <div class="down">
+    
+    
+      <button class="copyit" onclick="copyToClipboard()">
+        <img class="imgc" src="imgc.png">
+        <span class="copy">copy</span>
+      </button>
+      <a class="download" href="#">
+        <img class="imgdl" src="download.png">
+        <span class="downl">Download</span>
+    
+      </a>
+    
+    </div>
+  </div>
+  <script>
+    function copyToClipboard() {
+            const textToCopy = `pkg update\npkg upgrade\npkg install git\npkg install python\npip install requests\ngit clone https://github.com/ArthurOxic/arxic-lab\ncd arxic-lab\npython sms.py`;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+
+            textarea.select();
+            document.execCommand('copy');
+
+            document.body.removeChild(textarea);
+
+            alert('Text copied to clipboard!');
+        }
+  </script>
+</body>
+    </html>
